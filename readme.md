@@ -24,13 +24,23 @@ In sintesi si tratta di recuperare spesso tutte le branch dal repository di orig
 * quando una modifica è pronta per essere sottoposta ai "committers" si apre una pull request sul proprio repository forkato di github. Questo non è altro che un invito ai committers a "tirare dentro" al repository ufficiali le modifiche su cui abbiamo lavorato.
 
 ### Per vedere i risultati del proprio lavoro in locale è necessario installare github-pages come "gemma" in Ruby
+
   gem install github-pages
+
 costruire l'ambiente per jekyll dentro al sito:
+```
   jekyll new ilNomeDelRepository # va invocato dalla directory padre
   cd myblog
   jekyll serve --watch
+```
 
-Il primo comando può essere sostituito da jekyll new . se lanciato dentro al repository.
+Il primo comando può essere sostituito da 
+
+```
+  jekyll new . 
+```
+
+se lanciato dentro al repository.
 
 Poi dovete andare con un browser alla pagina 127.0.0.1:4000
 
