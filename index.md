@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 21 Lezioni
-subtitle: Cosa ho imparato nel cadere dentro la tana del Bianconiglio
+subtitle: Cosa ho imparato nel cadere dentro la tana del Bianconiglio del Bitcoin. Traduzoine in Italiano del sito 21lessons.com
 subtitle_link: http://gabridome.github.io/21-lessons
 category: bitcoin
 description: Un'esplorazione sulle domande e sulle lezioni apprese nel cadere dentro la tana del Bianconiglio che è il Bitcoin. traduzione italiana del sito 21lessons.com
