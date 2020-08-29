@@ -1,46 +1,42 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
-                <p class="copyright text-muted">Aggiornato {{ site.time }}</p>
-            </div>
-        </div>
+<!-- The footer at the very bottom of the screen -->
+<footer class="footer section-padding">
+  <div class="grid">
+    <div class="footer__container">
+      <p class="license">
+        <small>
+          Except where otherwise noted, content on this site is licensed under a
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank">Creative Commons Attribution-ShareAlike 4.0
+          International (CC BY-SA 4.0)  license</a>. If you like the content on
+          this site, there are many ways to <a
+          href="https://dergigi.com/support">show your support</a>.
+        </small>
+      </p>
+      {% include social.html %}
+      <p class="sister_projects">
+        <small>
+          Sister projects:
+          <a href="https://bit.ly/21waysbook">21 Ways</a> ·
+          <a href="https://bitcoin-resources.com">Bitcoin Resources</a> ·
+          <a href="https://www.bitcoin-quotes.com">Bitcoin Quotes</a>
+        </small>
+      </p>
+      <p class="license">
+        <small>
+          Made with ♥️ by <a href="https://dergigi.com">Gigi</a>
+        </small>
+      </p>
     </div>
+  </div>
 </footer>
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+{% if paginator.next_page %}
+  <script>
+    var maxPages = parseInt('{{ paginator.total_pages }}');
+  </script>
+{% endif %}
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="js/clean-blog.min.js"></script>
+<!-- Amazon OneLink, for country-based redirects -->
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=24d60e4a-ce4c-42a0-9d88-40f766b2d4f4"></script>
