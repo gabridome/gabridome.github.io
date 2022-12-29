@@ -3,6 +3,7 @@ email: dergigi@pm.me
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics:
+include: [".well-known"]
 
 name: Gigi
 title: 21Lessons.com
